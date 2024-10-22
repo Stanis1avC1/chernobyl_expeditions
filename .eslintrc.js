@@ -30,6 +30,9 @@ const config = {
                 config: './config/webpack.dev.config.js',
             },
         },
+        react: {
+            version: 'detect',
+        },
     },
     plugins: ['simple-import-sort', 'react'],
     ignorePatterns: ['node_modules'],
