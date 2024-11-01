@@ -1,0 +1,38 @@
+
+.contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .contactIcon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .contactImage {
+    width: 400px;
+    border-radius: 8px;
+  }
+  .contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 320px;
+}
