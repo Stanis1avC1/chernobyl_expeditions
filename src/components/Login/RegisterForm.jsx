@@ -1,4 +1,3 @@
-// components/RegisterForm.js
 import React, { useState } from 'react';
 import { useRegister } from './hooks/useRegister';
 import styles from './RegisterForm.module.css';

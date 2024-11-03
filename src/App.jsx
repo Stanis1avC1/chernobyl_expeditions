@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/about-zone" element={<AboutZone />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contacts" element={<Contact />} />
-          <Route path="/tours" element={<TourInfo />} /> {/* Маршрут для Tours */}
+          <Route path="/tours" element={<TourInfo />} />
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/login" element={<Login />} />
         </Routes>
