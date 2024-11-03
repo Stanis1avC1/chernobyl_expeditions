@@ -1,7 +1,6 @@
-// src/firebase.js
 import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth'; // Якщо ви плануєте використовувати авторизацію
-import { getFirestore } from 'firebase/firestore'; // Якщо ви плануєте використовувати Firestore
+import { getAuth } from 'firebase/auth'; 
+import { getFirestore } from 'firebase/firestore'; 
 
 const firebaseConfig = {
     apiKey: "AIzaSyA-bkXuc8K7eAxPIjvjH54tKL63rJbEvpw",
@@ -12,7 +11,6 @@ const firebaseConfig = {
     appId: "1:707251635965:web:cd6a17bf9cbbca17a5a094"
 };
 
-// Ініціалізація Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app); // Експортуємо авторизацію
-export const db = getFirestore(app); // Експортуємо Firestore
+export const auth = getAuth(app); 
+export const db = getFirestore(app); 
