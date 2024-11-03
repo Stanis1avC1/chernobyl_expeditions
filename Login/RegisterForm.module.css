@@ -1,0 +1,103 @@
+.container {
+    background-color: #a0f469;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 200px auto 300px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .checkboxContainer {
+    display: flex;
+    align-items: center;
+.header {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navMenu a, .authButtons button {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.container {
+  background-color: #a0f469;
+  width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
