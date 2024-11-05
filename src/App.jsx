@@ -13,6 +13,7 @@ import Login from './components/Login/LoginForm';
 import RegistrationForm from './components/Login/RegisterForm';
 import TourInfo from './components/TourInfo/TourInfo';
 
+
 const App = () => {
   return (
     <Router>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import homeImage from '../../assets/home.jpg';
-import phoneIcon from '../../assets/phoneIcon.jpg'; 
+import phoneIcon from '../../assets/phoneIcon.jpg';
 import pripyatImage from '../../assets/pripyatImage.jpg';
 import member1 from '../../assets/teamMember1.jpg';
 import member2 from '../../assets/teamMember2.jpg';

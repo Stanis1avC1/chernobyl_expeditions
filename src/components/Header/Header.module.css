@@ -42,12 +42,18 @@
   text-decoration: underline;
 }
 
+.activeLink {
+  font-weight: bold; 
+  color: #ff0000; 
+}
+
 .authButtons {
   display: flex;
   align-items: center;
 }
 
-.loginButton, .registerButton {
+.loginButton,
+.registerButton {
   background-color: #adff2f;
   color: #000;
   border: none;
@@ -57,6 +63,34 @@
   line-height: 1;
 }
 
-.loginButton:hover, .registerButton:hover {
+.loginButton:hover,
+.registerButton:hover {
   background-color: #c8ff5f;
+}
+@media (max-width: 768px) {
+  .bannerOverlay {
+    flex-direction: column;
+  }
+
+  .tourText {
+    font-size: 1.2rem;
+  }
+
+  .statistics {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .teamMembers {
+    gap: 10px;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+
+  .moreButton {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
 }

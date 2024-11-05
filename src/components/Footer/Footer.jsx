@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import logo from '../../assets/logo.png';
 import styles from './Footer.module.css';
@@ -11,10 +11,10 @@ function Footer() {
         <img src={logo} alt="Chernobyl Expeditions Logo" />
       </div>
       <nav className={styles.footerNav}>
-        <Link to="/about-zone" className={styles.navLink}>Про зону</Link>
-        <Link to="/about-us" className={styles.navLink}>Про нас</Link>
-        <Link to="/tours" className={styles.navLink}>Тури</Link>
-        <Link to="/contacts" className={styles.navLink}>Контакти</Link>
+        <NavLink to="/about-zone" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}>Про зону</NavLink>
+        <NavLink to="/about-us" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}>Про нас</NavLink>
+        <NavLink to="/tours" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}>Тури</NavLink>
+        <NavLink to="/contacts" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}>Контакти</NavLink>
       </nav>
     </footer>
   );

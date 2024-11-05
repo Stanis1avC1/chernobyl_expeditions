@@ -153,3 +153,80 @@
 .moreButton:hover {
   background-color: #28a428;
 }
+
+
+@media (max-width: 768px) {
+  .banner {
+    margin-bottom: 20px;
+  }
+
+  .bannerImage {
+    height: 200px; 
+    object-fit: cover;
+  }
+
+  .bannerOverlay {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tourOption {
+    flex: none;
+    margin: 10px 0;
+  }
+
+  .tourText {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .statistics {
+    flex-direction: column;
+    padding: 15px;
+    width: 90%;
+  }
+
+  .statItem {
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+
+  .imageContainer {
+    position: relative;
+    margin-top: 20px;
+    top: auto;
+    left: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pripyatImage {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .teamMembers {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .teamMember {
+    width: 80%; 
+    height: auto;
+  }
+
+  .teamImage {
+    height: 200px;
+  }
+
+  .moreButton {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
