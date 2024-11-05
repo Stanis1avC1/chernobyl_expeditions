@@ -62,7 +62,7 @@ const config = {
     globals: {
         Cypress: true,
     },
-    parser: 'babel-eslint', // Додано парсер для підтримки JSX
+    parser: 'babel-eslint',
 };
 
 module.exports = config;
