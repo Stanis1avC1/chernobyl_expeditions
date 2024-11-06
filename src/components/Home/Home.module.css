@@ -1,0 +1,232 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin-bottom: 40px;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+.bannerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tourOption {
+  flex: 1;
+  text-align: center;
+}
+
+.tourText {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 4px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.statItem {
+  flex: 1;
+  position: relative;
+  padding: 0 10px;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.statItem p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.statImageContainer {
+  text-align: center;
+}
+
+.statImage {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.statItem::before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(30deg);
+}
+
+.statItem:first-child::before {
+  transform: translateX(-50%) rotate(-30deg);
+}
+
+.imageContainer {
+  position: absolute; 
+  top: 1100px; 
+  left: 1450px; 
+  margin-top: 20px;
+}
+
+.pripyatImage {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.team {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.teamMember {
+  width: 250px; 
+  height: 300px; 
+}
+
+.teamImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  border: 2px solid #fff;
+}
+
+.moreButton {
+  background-color: #32cd32;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.moreButton:hover {
+  background-color: #28a428;
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    margin-bottom: 20px;
+  }
+
+  .bannerImage {
+    height: 200px; 
+    object-fit: cover;
+  }
+
+  .bannerOverlay {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tourOption {
+    flex: none;
+    margin: 10px 0;
+  }
+
+  .tourText {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .statistics {
+    flex-direction: column;
+    padding: 15px;
+    width: 90%;
+  }
+
+  .statItem {
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+
+  .imageContainer {
+    position: relative;
+    margin-top: 20px;
+    top: auto;
+    left: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pripyatImage {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .teamMembers {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .teamMember {
+    width: 80%; 
+    height: auto;
+  }
+
+  .teamImage {
+    height: 200px;
+  }
+
+  .moreButton {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}

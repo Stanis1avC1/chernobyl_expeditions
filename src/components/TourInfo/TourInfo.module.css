@@ -1,0 +1,31 @@
+.tourCard {
+    position: relative;
+    width: 100%; 
+    margin: 0 auto; 
+  }
+  
+  .tourImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 30%; 
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .overlay:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  

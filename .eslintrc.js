@@ -1,5 +1,3 @@
-// https://eslint.org/docs/v8.x/
-
 const config = {
     env: {
         browser: true,
@@ -64,6 +62,7 @@ const config = {
     globals: {
         Cypress: true,
     },
+    parser: 'babel-eslint',
 };
 
 module.exports = config;

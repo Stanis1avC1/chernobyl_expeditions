@@ -1,27 +1,37 @@
-import React from 'react';
+import './App.css';
 
-// import resizeHook from '@hooks/resize';
-// import styles from './App.css';
-// import * as styles from './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import AboutUs from './components/AboutUs/AboutUs';
+import AboutZone from './components/AboutZone/AboutZone';
+import Contact from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Login from './components/Login/LoginForm';
+import RegistrationForm from './components/Login/RegisterForm';
+import TourInfo from './components/TourInfo/TourInfo';
+
 
 const App = () => {
-    return (
-        <div>
-            <Header />
-            <div id="tabs">
-                <menu>
-                    <button id="btn-why-react" className="active">
-                        Чому React?
-                    </button>
-                    <button id="btn-core-features">Основні переваги (Features)</button>
-                    <button id="btn-resources">Корисні посилання</button>
-                </menu>
-                <div id="tab-content"></div>
-            </div>
-        </div>
-    );
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-zone" element={<AboutZone />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contacts" element={<Contact />} />
+          <Route path="/tours" element={<TourInfo />} />
+          <Route path="/register" element={<RegistrationForm />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 };
 
-// export { App };
 export default App;
